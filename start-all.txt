@@ -1,0 +1,12 @@
+window 1
+./sbin/rabbitmq-server
+window 2
+./bin/postgres -D ./pgsql/data
+window 3
+python manage.py celeryd --verbosity=2 --loglevel=DEBUG -E
+window 4
+python manage.py celerybeat --verbosity=2 --loglevel=DEBUG
+window 5
+python manage.py celerycam
+window 6
+python manage.py runserver
