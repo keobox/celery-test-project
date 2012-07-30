@@ -29,7 +29,7 @@ python-dateutil==1.5
 virtualenv==1.5.1
 wsgiref==0.1.2
 
-To start all the pieces in foreground open six terminals and type the following command:
+To start all the pieces in foreground open six terminals and type the following commands in each window:
 Window 1
 ./sbin/rabbitmq-server
 Window 2
