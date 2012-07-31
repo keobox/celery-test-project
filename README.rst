@@ -14,6 +14,7 @@ instead of
 rabbitmqctl set_permissions -p myvhost myusername "" ".\*" ".\*"
 
 The code works in a python virtualenv with the following *dependencies*:
+
  - Django==1.4
  - amqplib==1.0.2
  - anyjson==0.3.3
